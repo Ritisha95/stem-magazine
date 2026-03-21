@@ -1542,148 +1542,136 @@
     </div>
 </div>
     <!-- Subscribe Page -->
-    <div id="subscribe" class="page">
-        <div class="hero" style="padding: 8rem 2rem 6rem;">
-            <div class="hero-content">
-                <h1 style="font-size: 3.5rem;">Never Miss an Issue</h1>
-                <p>Get cutting-edge student research and STEM insights delivered to your inbox every month. Completely free.</p>
-            </div>
-        </div>
-
-        <div class="container" style="padding-top: 3rem;">
-            <div style="max-width: 700px; margin: 0 auto;">
-                
-                <div style="background: var(--dark); color: white; padding: 4rem 3rem; margin-bottom: 4rem; border-left: 4px solid var(--primary);">
-                    <h3 style="font-family: 'Outfit', sans-serif; font-size: 2rem; font-weight: 700; margin-bottom: 2rem;">What You'll Get</h3>
-                    <ul style="list-style: none; padding: 0;">
-                        <li style="font-family: 'Lora', serif; color: rgba(255,255,255,0.9); margin-bottom: 1.5rem; padding-left: 2rem; position: relative; line-height: 1.7;">
-                            <span style="position: absolute; left: 0; color: var(--primary); font-size: 1.2rem;">✓</span>
-                            Monthly digital magazine with original student research and technical articles
-                        </li>
-                        <li style="font-family: 'Lora', serif; color: rgba(255,255,255,0.9); margin-bottom: 1.5rem; padding-left: 2rem; position: relative; line-height: 1.7;">
-                            <span style="position: absolute; left: 0; color: var(--primary); font-size: 1.2rem;">✓</span>
-                            Full access to our archive of published issues and research papers
-                        </li>
-                        <li style="font-family: 'Lora', serif; color: rgba(255,255,255,0.9); margin-bottom: 1.5rem; padding-left: 2rem; position: relative; line-height: 1.7;">
-                            <span style="position: absolute; left: 0; color: var(--primary); font-size: 1.2rem;">✓</span>
-                            Behind-the-scenes editorial updates and submission opportunities
-                        </li>
-                        <li style="font-family: 'Lora', serif; color: rgba(255,255,255,0.9); margin-bottom: 1.5rem; padding-left: 2rem; position: relative; line-height: 1.7;">
-                            <span style="position: absolute; left: 0; color: var(--primary); font-size: 1.2rem;">✓</span>
-                            Early notifications about deadlines, calls for papers, and special issues
-                        </li>
-                        <li style="font-family: 'Lora', serif; color: rgba(255,255,255,0.9); margin-bottom: 0; padding-left: 2rem; position: relative; line-height: 1.7;">
-                            <span style="position: absolute; left: 0; color: var(--primary); font-size: 1.2rem;">✓</span>
-                            Join our Discord community of student researchers
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="section-heading">
-                    <h2>Subscribe for Free</h2>
-                    <p>Join thousands of students advancing STEM research</p>
-                </div>
-
-                <form class="submit-form" onsubmit="handleSubscribe(event)">
-                    <div class="form-group">
-                        <label for="sub-name">Full Name *</label>
-                        <input type="text" id="sub-name" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="sub-email">Email Address *</label>
-                        <input type="email" id="sub-email" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="sub-school">School/Institution (Optional)</label>
-                        <input type="text" id="sub-school">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="sub-interests">What STEM topics interest you most? (Optional)</label>
-                        <textarea id="sub-interests" placeholder="Biology, computer science, physics, engineering, mathematics, etc." rows="3"></textarea>
-                    </div>
-
-                    <div class="form-group" style="margin-top: 2rem;">
-                        <label style="display: flex; align-items: flex-start; text-transform: none; letter-spacing: normal; font-size: 1rem; cursor: pointer;">
-                            <input type="checkbox" required style="width: auto; margin-right: 0.8rem; margin-top: 0.2rem; flex-shrink: 0;">
-                            <span style="font-family: 'Lora', serif; font-weight: 400;">I agree to receive monthly issues and occasional updates from The Centrifuge. You can unsubscribe at any time.</span>
-                        </label>
-                    </div>
-
-                    <button type="submit" class="submit-button">Subscribe Now</button>
-                    <p style="text-align: center; margin-top: 1.5rem; color: var(--gray); font-family: 'Lora', serif; font-size: 0.95rem;">
-                        We respect your privacy. No spam, ever. Unsubscribe anytime.
-                    </p>
-                </form>
-
-                <div style="margin-top: 6rem; padding: 4rem 3rem; background: white; border: 1px solid rgba(0, 0, 0, 0.08);">
-                    <h3 style="font-family: 'Outfit', sans-serif; font-size: 2rem; font-weight: 700; margin-bottom: 2.5rem; color: var(--dark); text-align: center;">Why We're Free</h3>
-                    <p style="font-family: 'Lora', serif; color: var(--text); line-height: 1.8; font-size: 1.1rem; margin-bottom: 1.5rem;">
-                        We believe rigorous research should be accessible to everyone. The Centrifuge is run by students, for students, and we're committed to keeping all content free forever.
-                    </p>
-                    <p style="font-family: 'Lora', serif; color: var(--text); line-height: 1.8; font-size: 1.1rem;">
-                        Our mission is to amplify student voices in STEM, not put them behind paywalls. By subscribing, you're joining a community that believes in open access to student research and scientific collaboration.
-                    </p>
-                </div>
-            </div>
+<div id="subscribe" class="page">
+    <div class="hero" style="padding: 8rem 2rem 6rem;">
+        <div class="hero-content">
+            <h1 style="font-size: 3.5rem;">Never Miss an Issue</h1>
+            <p>Get cutting-edge student research and STEM insights delivered to your inbox every month. Completely free.</p>
         </div>
     </div>
 
-    <!-- Contact Page -->
-    <div id="contact" class="page">
-        <div class="container">
+    <div class="container" style="padding-top: 3rem;">
+        <div style="max-width: 700px; margin: 0 auto;">
+            
+            <div style="background: var(--dark); color: white; padding: 4rem 3rem; margin-bottom: 4rem; border-left: 4px solid var(--primary);">
+                <h3 style="font-family: 'Outfit', sans-serif; font-size: 2rem; font-weight: 700; margin-bottom: 2rem;">What You'll Get</h3>
+                <ul style="list-style: none; padding: 0;">
+                    <li style="font-family: 'Lora', serif; color: rgba(255,255,255,0.9); margin-bottom: 1.5rem; padding-left: 2rem; position: relative; line-height: 1.7;">
+                        <span style="position: absolute; left: 0; color: var(--primary); font-size: 1.2rem;">✓</span>
+                        Monthly digital magazine with original student research and technical articles
+                    </li>
+                    <li style="font-family: 'Lora', serif; color: rgba(255,255,255,0.9); margin-bottom: 1.5rem; padding-left: 2rem; position: relative; line-height: 1.7;">
+                        <span style="position: absolute; left: 0; color: var(--primary); font-size: 1.2rem;">✓</span>
+                        Full access to our archive of published issues and research papers
+                    </li>
+                    <li style="font-family: 'Lora', serif; color: rgba(255,255,255,0.9); margin-bottom: 1.5rem; padding-left: 2rem; position: relative; line-height: 1.7;">
+                        <span style="position: absolute; left: 0; color: var(--primary); font-size: 1.2rem;">✓</span>
+                        Behind-the-scenes editorial updates and submission opportunities
+                    </li>
+                </ul>
+            </div>
+
             <div class="section-heading">
-                <h2>Get In Touch</h2>
-                <p>Questions, collaboration ideas, or feedback? We'd love to hear from you!</p>
+                <h2>Subscribe for Free</h2>
+                <p>Join thousands of students advancing STEM research</p>
             </div>
 
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <div class="contact-icon">📧</div>
-                        <div class="contact-details">
-                            <h3>Email Us</h3>
-                            <p>thecentrifugemag@gmail.com</p>
-                        </div>
-                    </div>
-
-                    <div class="contact-item">
-                        <div class="contact-icon">🌐</div>
-                        <div class="contact-details">
-                            <h3>Follow Us</h3>
-                            <p>@thecentrifugemag on Instagram</p>
-                        </div>
-                    </div>
+            <form action="/subscribe" method="POST" class="submit-form">
+                <div class="form-group">
+                    <label for="sub-name">Full Name *</label>
+                    <input type="text" id="sub-name" name="name" required>
                 </div>
 
-                <form class="submit-form" onsubmit="handleContactSubmit(event)" style="margin: 0;">
-                    <div class="form-group">
-                        <label for="contact-name">Name *</label>
-                        <input type="text" id="contact-name" required>
-                    </div>
+                <div class="form-group">
+                    <label for="sub-email">Email Address *</label>
+                    <input type="email" id="sub-email" name="email" required>
+                </div>
 
-                    <div class="form-group">
-                        <label for="contact-email">Email *</label>
-                        <input type="email" id="contact-email" required>
-                    </div>
+                <div class="form-group">
+                    <label for="sub-school">School/Institution (Optional)</label>
+                    <input type="text" id="sub-school" name="school">
+                </div>
 
-                    <div class="form-group">
-                        <label for="contact-subject">Subject *</label>
-                        <input type="text" id="contact-subject" required>
-                    </div>
+                <div class="form-group">
+                    <label for="sub-interests">What STEM topics interest you most? (Optional)</label>
+                    <textarea id="sub-interests" name="interests" placeholder="Biology, computer science, physics, engineering, mathematics, etc." rows="3"></textarea>
+                </div>
 
-                    <div class="form-group">
-                        <label for="contact-message">Message *</label>
-                        <textarea id="contact-message" required></textarea>
-                    </div>
+                <div class="form-group" style="margin-top: 2rem;">
+                    <label style="display: flex; align-items: flex-start; text-transform: none; letter-spacing: normal; font-size: 1rem; cursor: pointer;">
+                        <input type="checkbox" required style="width: auto; margin-right: 0.8rem; margin-top: 0.2rem; flex-shrink: 0;">
+                        <span style="font-family: 'Lora', serif; font-weight: 400;">I agree to receive monthly issues and occasional updates from The Centrifuge. You can unsubscribe at any time.</span>
+                    </label>
+                </div>
 
-                    <button type="submit" class="submit-button">Send Message</button>
-                </form>
+                <button type="submit" class="submit-button">Subscribe Now</button>
+                <p style="text-align: center; margin-top: 1.5rem; color: var(--gray); font-family: 'Lora', serif; font-size: 0.95rem;">
+                    We respect your privacy. No spam, ever. Unsubscribe anytime.
+                </p>
+            </form>
+
+            <div style="margin-top: 6rem; padding: 4rem 3rem; background: white; border: 1px solid rgba(0, 0, 0, 0.08);">
+                <h3 style="font-family: 'Outfit', sans-serif; font-size: 2rem; font-weight: 700; margin-bottom: 2.5rem; color: var(--dark); text-align: center;">Why We're Free</h3>
+                <p style="font-family: 'Lora', serif; color: var(--text); line-height: 1.8; font-size: 1.1rem; margin-bottom: 1.5rem;">
+                    We believe rigorous research should be accessible to everyone. The Centrifuge is run by students, for students, and we're committed to keeping all content free forever.
+                </p>
             </div>
         </div>
     </div>
+</div>
+
+<div id="contact" class="page">
+    <div class="container">
+        <div class="section-heading">
+            <h2>Get In Touch</h2>
+            <p>Questions, collaboration ideas, or feedback? We'd love to hear from you!</p>
+        </div>
+
+        <div class="contact-grid">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon">📧</div>
+                    <div class="contact-details">
+                        <h3>Email Us</h3>
+                        <p>thecentrifugemag@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">🌐</div>
+                    <div class="contact-details">
+                        <h3>Follow Us</h3>
+                        <p>@thecentrifugemag on Instagram</p>
+                    </div>
+                </div>
+            </div>
+
+            <form action="/contact" method="POST" class="submit-form" style="margin: 0;">
+                <div class="form-group">
+                    <label for="contact-name">Name *</label>
+                    <input type="text" id="contact-name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="contact-email">Email *</label>
+                    <input type="email" id="contact-email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="contact-subject">Subject *</label>
+                    <input type="text" id="contact-subject" name="subject" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="contact-message">Message *</label>
+                    <textarea id="contact-message" name="message" required></textarea>
+                </div>
+
+                <button type="submit" class="submit-button">Send Message</button>
+            </form>
+        </div>
+    </div>
+</div>
 
     <!-- Footer -->
     <footer>
