@@ -664,23 +664,79 @@
             overlay.classList.toggle('active');
         }
 
-        function handleSubmit(event) {
-            event.preventDefault();
-            alert('Thank you for your submission! We\'ll review your article and get back to you within 2 weeks.');
-            event.target.reset();
-        }
+        async function handleSubmit(event) {
+    event.preventDefault();
+    
+    // This grabs everything the user typed into the form
+    const formData = new FormData(event.target);
+    const data = Object.fromEntries(formData.entries());
 
-        function handleContactSubmit(event) {
-            event.preventDefault();
-            alert('Thanks for reaching out! We\'ll get back to you as soon as possible.');
-            event.target.reset();
-        }
+    try {
+        // This sends the data to your Vercel backend
+        const response = await fetch('/api/submit', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(data),
+        });
 
-        function handleSubscribe(event) {
-            event.preventDefault();
-            alert('Thank you for subscribing to The Centrifuge! Check your email for confirmation.');
+        if (response.ok) {
+            alert('Received! Your article is now in our queue.');
             event.target.reset();
+        } else {
+            alert('Something went wrong. Please try again.');
         }
+    } catch (err) {
+        alert('Check your internet connection and try again!');
+    }
+}
+
+// Updated Contact Handler
+async function handleContactSubmit(event) {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+    const data = Object.fromEntries(formData.entries());
+
+    try {
+        const response = await fetch('/api/contact', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(data),
+        });
+
+        if (response.ok) {
+            alert('Thanks for reaching out! We\'ll get back to you soon.');
+            event.target.reset();
+        } else {
+            alert('Message failed to send. Please try again.');
+        }
+    } catch (err) {
+        alert('Connection error!');
+    }
+}
+
+// Updated Subscribe Handler
+async function handleSubscribe(event) {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+    const data = Object.fromEntries(formData.entries());
+
+    try {
+        const response = await fetch('/api/subscribe', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(data),
+        });
+
+        if (response.ok) {
+            alert('You are subscribed to The Centrifuge!');
+            event.target.reset();
+        } else {
+            alert('Subscription failed. Are you already on the list?');
+        }
+    } catch (err) {
+        alert('Connection error!');
+    }
+}
 
         function openTeamModal(index) {
             const member = teamMembers[index];
